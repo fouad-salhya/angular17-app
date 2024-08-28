@@ -1,0 +1,45 @@
+<div class="container-fluid mt-5 mb-3">
+    <div class="col-xs-12 col-sm-12 col-md-8 mx-md-auto scrol">
+        <form #questionForm="ngForm" (ngSubmit)="saveQuestions()">
+            @for (item of tableauNumber; track $index) {
+             <div class="row mb-2">
+                     <div class="card">
+                         <div class="card-body">
+                             <h4 class="card-title">Question {{item}}</h4>
+                             <div class="row">
+                                 <div class="col-11">
+                                     <input 
+                                           type="text" 
+                                           class="form-control" 
+                                           [(ngModel)]="question[item]"
+                                           #questions="ngModel"
+                                           name="question{{item}}" 
+                                           id="question{{item}}"
+                                           >
+                         
+                                      {{question[item]}}
+         
+                                 </div>
+                                 <div class="col-1">
+                                    <div class="add">
+                                        <i class="fa fa-refresh bg-warning" aria-hidden="true"></i>
+                                    </div>
+                                       
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                    
+             </div>
+            }
+            <div class="row">
+             <button class="btn btn-primary" [disabled]="!questionForm.valid">Terminer</button>
+            </div>
+         </form>
+    </div>
+</div>
+
+
+ 
+
+

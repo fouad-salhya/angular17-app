@@ -1,0 +1,27 @@
+div.add i  {
+    
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: blue;
+
+}
+
+div.card {
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    padding: 10px;
+
+}
+
+div.pencil i {
+    position: absolute;
+    right: calc(100% - 96%);
+    bottom: 5px;
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+
+}

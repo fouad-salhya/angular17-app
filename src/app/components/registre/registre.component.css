@@ -1,0 +1,21 @@
+
+div.card {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+button.btn-registre {
+
+    width: 95%;
+    position: relative;
+    left: calc(100% - 98%);
+    font-weight: 500;
+}
+
+.redirect-signup > a {
+    text-decoration: none;
+    position: relative;
+    right: calc(100% - 96%);
+    font-weight: 500;
+    cursor: pointer;
+}
+

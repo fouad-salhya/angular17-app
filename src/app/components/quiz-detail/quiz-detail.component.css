@@ -1,0 +1,20 @@
+div.add > i {
+    position: relative;
+    float: right;
+    top: 4px;
+    bottom: 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-top: 5px;
+    cursor: pointer;
+    
+}
+
+div.card {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
